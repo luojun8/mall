@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper
+        namespace="com.bjtu.item.db.mapper.ItemMapper">
+    <update id="update" parameterType="Map">
+        update t_item
+        <set>
+            <if test="fresh.name!=null">name = #{fresh.name},</if>
+            <if test="fresh.status!=null">status = #{fresh.status},</if>
+            <if test="fresh.stock!=null">stock = #{fresh.stock},</if>
+            <if test="fresh.price!=null">price = #{fresh.price}</if>
+            <if test="fresh.desc!=null">desc = #{fresh.desc}</if>
+            <if test="fresh.image!=null">image = #{fresh.image}</if>
+        </set>
+        <where>
+            id=#{old.id}
+            <if test="old.name!=null">and name = #{old.name}</if>
+            <if test="old.status!=null">and status = #{old.status}</if>
+            <if test="old.item!=null">and stock = #{old.stock}</if>
+            <if test="old.price!=null">and price = #{old.price}</if>
+            <if test="old.desc!=null">and desc = #{old.desc}</if>
+            <if test="old.image!=null">and image = #{old.image}</if>
+        </where>
+    </update>
+</mapper>

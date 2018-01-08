@@ -1,0 +1,17 @@
+.content {width:auto; height:auto; text-align:center; position:relative;}
+
+#upload{width:auto;height: auto}
+#file{width:30%;height: 30px}
+
+.upload{position:absolute;margin-left:40%; display: none;width:10%;height: 20%}
+
+.good{width:80%;margin-left: 100px;padding:20px;}
+.item{margin-top: 10px ;width:30%;height:50px;}
+
+.item span{width:20%; height: 80%}
+.item input{width: 60%;height: 80%}
+
+#editor{padding-top: 20px}
+
+#addGood{width:100px; height:45px; margin-left:80%; background:#E54346 ; margin-top:20px; color:#fff; border:none; border-radius:5px; font:bold 16px "微软雅黑"; letter-spacing:2px; cursor:pointer; outline:none;}
+#addGood:hover{opacity:0.9; filter:alpha(opacity=90);}

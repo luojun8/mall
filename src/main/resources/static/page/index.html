@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+</head>
+<body>
+	<iframe id="header" scrolling="no" frameborder="0" width="100%" height="74px"  src="header.html"></iframe>
+	<div class="headerMain">
+		<div class="logo fl">
+			<a href="#"><img src="../image/tools/logo.jpg" title="果蔬缤纷"></a>
+		</div>
+		<div class="search fl">
+			<div class="searchForm">
+				<input type="text" name="searchText" placeholder="输入关键字搜索" class="searchText">
+				<input type="button" class="searchBtn" value="搜索" >
+			</div>
+		</div>
+	</div>
+	<!--nav start-->
+	<div id="nav">
+		<ul class="navList fl">
+			<li class="fl allList list">
+				<a href="#" class="listA">首页</a>
+			</li>
+		</ul>
+
+		<div class="cartBar fl">
+			<span id="hoverCart">
+				<span class="cartIcon">&#xe015;</span>
+				<span class="cartText">购物车中有</span>
+				<strong class="cartNumber"></strong>
+				<span class="cartText">商品</span>
+				<div id="cartGoods">
+					<ul>
+						<li>
+					</ul>
+				</div>
+			</span >
+			<a href="cart.html" class="cartGo">去结算</a>
+		</div>
+	</div>
+	<!-- 轮播图 -->
+	<div id="slider">
+		<a href="#"><img src="../image/slider/banner1.jpg" alt=""></a>
+		<a href="#"><img src="../image/slider/banner2.jpg" alt=""></a>
+		<a href="#"><img src="../image/slider/banner3.jpg" alt=""></a>
+		<ul class="imgBtn">
+			<li class="fl"></li>
+			<li class="fl"></li>
+			<li class="fl"></li>
+		</ul>
+	</div>
+
+	<div id="priceSales" class="priceSales">
+			<div class="toolItemLeft fl">
+				<a href="javascript:void(0)" class="priceBtn">价格</a>
+				<span class="arrow asc"></span><span class="arrow dsc"></span>
+			</div>
+			<div class="toolItemRight fr">
+				<span class="totalNum">
+					共<b></b>个商品
+				</span>
+				<span class="toolPager">
+					<span class="pagerNum">
+						<b class="pagerCur"></b>/<em class="pagerTotal"></em>
+					</span>
+					<a href="javascript:void(0)" class="pagerPrev"></a>
+					<a href="javascript:void(0)" class="pagerNext"></a>
+				</span>
+			</div>
+		</div>
+
+	<iframe id="header" scrolling="no" frameborder="0" width="100%" height="74px"  src="foot.html"></iframe>
+</body>
+<script type="text/javascript" data-main="../js/index" src="../js/require.js"></script>
+</html> 

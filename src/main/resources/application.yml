@@ -1,0 +1,25 @@
+server:
+  context-path: /item
+  port: 8080
+
+db-groups:
+  - list:
+      - host: localhost
+        port: 3306
+        name: test
+        user: root
+        password: 123456
+        mappers:
+          - com.bjtu.item.db.mapper
+  - name: master
+    list:
+      - host: localhost
+        port: 3306
+        name: test
+        user: root
+        password: 123456
+        mappers:
+          - com.bjtu.item.db.mapper
+
+multipart:
+    max-request-size: 10Mb

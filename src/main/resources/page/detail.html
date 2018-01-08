@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>商品详情</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/productDetail.css">
+</head>
+<body>
+	<!--header-->
+	<div id="header">
+		<iframe id="header" scrolling="no" frameborder="0" width="100%" height="74px"  src="header.html"></iframe>
+		<!-- <div class="headerMain">
+			<div class="logo fl">
+				<a href="index.html"><img src="../image/tools/logo.jpg" title="XX商城"></a>
+			</div>
+		</div> -->
+	</div>
+	
+	<!--productDetail description start-->
+	<div id="detail">
+		<div class="detailLeft fl">
+
+			<div class="detailLeftTop">
+				<div class="detailImg fl">
+					<div class="bigImg">
+						<!--中图，鼠标放上有遮罩的图片-->
+						<img src="../image/goods/detailMango1_800_1.jpg" class="hoverImg">
+						<!--遮罩层-->
+						<div id="zhezhao"></div>
+						<!--查看的大图-->
+						<div id="outsideBigImg" style="display:none">
+							<img src="../image/goods/detailMango1_800_1.jpg" class="outSideimg">
+						</div>
+					</div>
+				</div>
+				<div class="detailContent fl">
+					<div class="detailTop">
+						<h1></h1>
+					</div>
+					<div class="detailPrice">
+						<dl class="detailNowPrice">
+							<dt>现价：</dt>
+							<dd>
+								<em>￥</em>
+								<span></span>
+							</dd>
+						</dl>
+					</div>
+					<ul class="detailNum">
+						<li class="fl lastLi"><span class="spanLabel">库存</span><span class="spanCount stock"></span></li>
+					</ul>
+					<div class="buttonNumCart"  onselectstart="return false">
+						
+							<div class="cartsNumber">
+								<span class="purchesNum">购买数量：</span>
+								<input type="text" value="1" name="cartNum" >
+								<input type="hidden" value="0000001" name="id" >
+								<span class="btns">
+									<span class="plus">&#x32;</span>
+									<span class="decrease">&#x33;</span>
+								</span>
+							</div>
+							<div class="purchesBtn">
+								<button class="atOnceBtn">立即购买</button>
+								<button class="plusCart"><em>&#xe015;</em>加入购物车</button>
+							</div>
+							<div class="info" style="display:none">
+								<p>✅添加成功</p>
+							</div>
+					</div>
+				</div>
+			</div>
+			<!--商品简介-->
+			<div class="detailCont">
+				<ul class="tabBar">
+					<li class="descriptionTabBar fl addTabBar"><a href="javascript:void(0)">商品简介</a></li>
+				</ul>
+				<div class="tabBarContent">
+					<div class="descriptionTabBarCont">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<iframe id="header" scrolling="no" frameborder="0" width="100%" height="74px"  src="foot.html"></iframe>
+	</div>
+</body>	
+<script type="text/javascript" data-main="../js/productDetail" src="../js/require.js"></script>
+</html> 

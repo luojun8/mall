@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>添加商品</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/addGood.css">
+	<script type="text/javascript" src="../js/wangEditor.js"></script>
+</head>
+<body scroll="no">
+	<!--header-->
+	<div id="header">
+		<iframe id="header" scrolling="no" frameborder="0" width="100%" height="74px"  src="header.html"></iframe>
+	</div>
+	<!-- addGood start-->
+	<div class="good">
+		<form id="upload">
+		    <input id="file" name="file" type="file" />
+		    <input id="token" name="token" type="hidden" />
+		</form>
+
+		<img class="upload" src="" />
+
+		<div class="content">
+			<div class="item"><span>名称：</span><input id="name" type="text" /></div>
+			<div class="item"><span>库存：</span><input id="store" type="text" /></div>
+			<div class="item"><span>价格：</span><input id="price" type="text" /></div>
+		</div>
+
+		<div id="editor">
+		    <p>请输入商品详情</p>
+		</div>
+
+		<input type="button" id="addGood" value="添加商品">
+	</div>
+	
+</body>
+
+<script type="text/javascript" data-main="../js/addGood" src="../js/require.js"></script>
+</html>
